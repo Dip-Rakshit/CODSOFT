@@ -1,0 +1,162 @@
+.logo{
+    display: flex;
+    
+    justify-content: space-between;
+    background-color: rgb(183, 30, 30);
+    
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.right{display: flex;
+margin-top: 1.2rem;
+margin-right: 1.2rem; 
+padding-top: .3rem;
+}
+*{ margin: 0;
+padding: 0;
+}
+.left{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.right button{
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(183, 30, 30);
+    border: none;
+    padding-top: .3rem;
+    cursor: pointer;
+}
+.search{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(178, 174, 174);
+    position: sticky;
+}
+.searching{width: 400px;
+    height: 2rem;
+    font-weight: 400;
+    padding-left: 9px;
+    border-radius: 10px;
+    border: none;
+    max-width: 60%;
+}
+.search>button{
+    background-color:rgb(183, 30, 30) ;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100vw;
+    height: 7.5rem;
+    background-color: aquamarine;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/518/751/original/vector-black-triangular-abstract-texture-low-light-background.jpg);
+    color: aliceblue;
+}
+.hero>h2{
+    font-size: 1.7rem;
+}
+.hero>button{
+    background-color:rgb(183, 30, 30) ;
+    margin-top: 6px;
+    height:28px ;
+    width: 82px;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.popular>h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.movies{
+    display: flex;
+    
+    background-color:white;
+    height: 17rem;
+    overflow-x: scroll;
+    overflow-y:auto;
+}
+.card{display: flex;
+    flex-direction: column;
+    border: 5px solid grey;
+    border-radius: 7px;
+    margin-left: 8px;
+    margin-right: 14px;
+    background-color: grey;
+    margin-top: 3px;
+    
+}
+.img{
+    height: 220px;
+    width: 170px;
+    border-radius: 4px;
+    
+}
+.card>h3{text-align: center;
+}
+.banner{
+    margin: 2.3rem;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    
+}
+.banner>img{
+   width:75vw;
+    height: 4rem;
+    max-width: 80%;
+}
+
+.card:hover{
+    scale: 1.1;
+    cursor: grab;
+}
+
+@media (max-width:500px) 
+{
+    .logo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right{
+       display: flex; 
+       flex-direction: column;
+       padding-top: 1rem;
+       
+    }
+
+    .movies{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .img{
+        width: 93vw;
+       
+       
+    }
+    .banner{
+        width: 80vw;
+        height: 4vh;
+    }
+    .card:hover{
+        scale:none;
+        cursor:pointer;
+    }
+}
